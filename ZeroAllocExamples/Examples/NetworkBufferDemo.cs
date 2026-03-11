@@ -1,10 +1,10 @@
 ﻿using BenchmarkDotNet.Attributes;
 using System.Buffers;
 
-namespace ZeroAllocExamples.Examples;
+namespace ZeroAllocExamples.Demo;
 
 [MemoryDiagnoser]
-public class NetworkBufferDemo : IExample
+public class NetworkBufferDemo : IDemo
 {
     private const int BufferSize = 4096;
 

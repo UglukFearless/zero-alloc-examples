@@ -1,9 +1,9 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace ZeroAllocExamples.Examples;
+namespace ZeroAllocExamples.Demo;
 
 [MemoryDiagnoser]
-public class CsvParsingDemo : IExample
+public class CsvParsingDemo : IDemo
 {
     private string _csvLine = "";
 
