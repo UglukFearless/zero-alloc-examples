@@ -1,5 +1,5 @@
 ﻿
-namespace ZeroAllocExamples.Demo;
+namespace ZeroAllocExamples.Demos;
 
 public interface IDemo
 {

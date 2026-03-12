@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Attributes;
 using System.Buffers;
 
-namespace ZeroAllocExamples.Demo;
+namespace ZeroAllocExamples.Demos;
 
 [MemoryDiagnoser]
 public class NetworkBufferDemo : IDemo

@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace ZeroAllocExamples.Demo;
+namespace ZeroAllocExamples.Demos;
 
 [MemoryDiagnoser]
 public class CsvParsingDemo : IDemo

@@ -2,7 +2,7 @@
 using BenchmarkDotNet.Attributes;
 using System.Collections.Concurrent;
 
-namespace ZeroAllocExamples.Demo;
+namespace ZeroAllocExamples.Demos;
 
 [MemoryDiagnoser]
 public class AsyncCacheDemo : IDemo
