@@ -14,7 +14,7 @@ public class CsvParsingDemo : IDemo
     }
 
     [Benchmark(Baseline = true)]
-    public int ParseWithSplit()
+    public int SumFieldsWithSplit()
     {
         var parts = _csvLine.Split(';');
         int sum = 0;
@@ -26,7 +26,7 @@ public class CsvParsingDemo : IDemo
     }
 
     [Benchmark]
-    public int CountFieldsWithSpan()
+    public int SumFieldsWithSpan()
     {
         ReadOnlySpan<char> span = _csvLine;
         int sum = 0;
@@ -46,5 +46,3 @@ public class CsvParsingDemo : IDemo
         return sum;
     }
 }
-
-public struct DummyStruct { public int Id; }

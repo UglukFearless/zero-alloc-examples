@@ -13,3 +13,11 @@ dotnet run --project ZeroAllocExamples/ZeroAllocExamples.csproj
 ```bash
 dotnet run --project ZeroAllocExamples/ZeroAllocExamples.csproj -c Release
 ```
+
+## Примеры
+
+- `AsyncCacheDemo` — сравнение `Task` и `ValueTask` для кешированного (синхронного) сценария чтения из словаря.
+- `CsvParsingDemo` — суммирование CSV-полей через `string.Split` и через `ReadOnlySpan<char>` без промежуточных массивов строк.
+- `LinqFilterDemo` — три подхода к фильтрации: классический LINQ, `class lease` c `ArrayPool`, и запись в буфер через `Span<int>`.
+- `NetworkBufferDemo` — обработка сетевого буфера через `new byte[]` и через повторное использование памяти из `ArrayPool<byte>`.
+- `StringBuildingDemo` — построение строки через `StringBuilder`, конкатенацию и `string.Create` с записью в целевой буфер.

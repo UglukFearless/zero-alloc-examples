@@ -31,7 +31,7 @@ public class NetworkBufferDemo : IDemo
         try
         {
             int checksum = 0;
-            for (int i = 0; i < buffer.Length; i++)
+            for (int i = 0; i < BufferSize; i++)
             {
                 buffer[i] = 1;
                 checksum += buffer[i];

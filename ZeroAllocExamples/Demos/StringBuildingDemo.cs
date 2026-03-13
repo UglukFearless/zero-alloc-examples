@@ -31,7 +31,7 @@ public class StringBuildingDemo : IDemo
         var result = "";
         for (int i = 0; i < IterationCount; i++)
         {
-            result += _part;
+            result += _part + "_";
         }
         return result;
     }
